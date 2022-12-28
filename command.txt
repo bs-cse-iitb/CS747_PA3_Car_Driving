@@ -1,0 +1,17 @@
+cd gym_driving_dir/gym_driving/simulator
+
+python run_simulator.py --task T1 --render
+
+
+python run_simulator.py --task T2 --random_seed 69 --frames_per_sec 150 --render
+python run_simulator.py --task T2 --random_seed 420 --frames_per_sec 150 --render
+python run_simulator.py --task T2 --random_seed 42 --frames_per_sec 150 --render
+python run_simulator.py --task T2 --random_seed 0 --frames_per_sec 150 --render
+python run_simulator.py --task T2 --random_seed 2012 --frames_per_sec 150 --render
+python run_simulator.py --task T2 --random_seed 747 --frames_per_sec 150 -render
+
+python autograder.py --task T1/T2
+
+python run_simulator3.py --task T2 --random_seed 42 --frames_per_sec 150 --render
+python run_simulator3.py --task T2 --random_seed 2012 --frames_per_sec 150 --render
+python run_simulator3.py --task T2 --random_seed 8 --frames_per_sec 150 --render
